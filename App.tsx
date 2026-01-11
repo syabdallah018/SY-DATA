@@ -5,6 +5,7 @@ import Home from './pages/Home';
 import SelectionFlow from './pages/SelectionFlow';
 import AdminDashboard from './pages/AdminDashboard';
 import Status from './pages/Status';
+import OrderTracker from './pages/OrderTracker';
 
 const App: React.FC = () => {
   return (
@@ -15,6 +16,7 @@ const App: React.FC = () => {
           <Route path="/buy" element={<SelectionFlow />} />
           <Route path="/admin" element={<AdminDashboard />} />
           <Route path="/status" element={<Status />} />
+          <Route path="/track" element={<OrderTracker />} />
           <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>
       </div>

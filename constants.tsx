@@ -30,7 +30,11 @@ export const PLANS: Record<Network, Record<Method, DataPlan[]>> = {
     ]
   },
   AIRTEL: {
-    MANUAL: [], // Not explicitly provided in prompt, so empty
+    MANUAL: [
+      { id: 'air-m-1', label: '1GB', price: 800 },
+      { id: 'air-m-2', label: '2GB', price: 1500 },
+      { id: 'air-m-5', label: '5GB', price: 3500 },
+    ],
     AUTO: [
       { id: 'air-a-1', label: '1GB', price: 900 },
       { id: 'air-a-2', label: '2GB', price: 1600 },
@@ -38,7 +42,11 @@ export const PLANS: Record<Network, Record<Method, DataPlan[]>> = {
     ]
   },
   GLO: {
-    MANUAL: [], // Not explicitly provided
+    MANUAL: [
+      { id: 'glo-m-1', label: '1GB', price: 400 },
+      { id: 'glo-m-2', label: '2GB', price: 800 },
+      { id: 'glo-m-3', label: '3GB', price: 1200 },
+    ],
     AUTO: [
       { id: 'glo-a-1', label: '1GB', price: 450 },
       { id: 'glo-a-2', label: '2GB', price: 900 },
